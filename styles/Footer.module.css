@@ -1,0 +1,15 @@
+.logo {
+    height: 80px;
+    background: #001a1a;
+    padding-left: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      padding: 1rem;
+    }
+  }
+  
