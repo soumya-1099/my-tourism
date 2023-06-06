@@ -21,17 +21,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    /* color: #fff; */
   }
   
-  .bannerText h1 {
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
-  
+  .bannerText h1 {  
     font-family: "IBM Plex Mono";
     font-style: normal;
     font-weight: 700;
-    font-size: 142px;
-    line-height: 132px;
+    font-size: 130px;
+    line-height: 129px;
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.5) 6.44%,

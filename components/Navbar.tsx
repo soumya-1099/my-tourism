@@ -9,26 +9,30 @@ const Header = () => {
     <>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <header className={stylesHeader.header}>
+          <div className={stylesHeader.navContainer}>
           <div className={stylesHeader.logo}>
+          <Link href="/">
             <Image src={alohaLogo} alt="Picture of the logo" />
+            </Link>
           </div>
-          <nav className={stylesHeader.nav}>
+          <nav className={stylesHeader.navListContainer}>
             <ul className={stylesHeader.navList}>
               <li>
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/surfing">Surfing</Link>
+                <Link href="/">Surfing</Link>
               </li>
               <li>
-                <Link href="/hula">Hula</Link>
+                <Link href="/">Hula</Link>
               </li>
               <li>
-                <Link href="/volcano">Volcano</Link>
+                <Link href="/">Volcano</Link>
               </li>
             </ul>
           </nav>
-          <div className={stylesHeader.button}>
+          </div>
+          <div className={stylesHeader.navbarButton}>
             <button>Book a Trip</button>
           </div>
         </header>
