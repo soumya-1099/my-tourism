@@ -1,0 +1,53 @@
+.categoriesContainer {
+  width: 50%;
+  margin: 0 1rem 1rem 0;
+}
+.categoriesTitle {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.categoriesCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  gap: 10px;
+  height: 68px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.categoriesCardButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+
+.categoriesCard span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #001a1a;
+}
+
+@media screen and (max-width: 768px) {
+  .categoriesContainer {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+  .categoriesTitle {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .categoriesCard {
+    padding: 20px;
+  }
+}
