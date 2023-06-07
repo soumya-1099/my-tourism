@@ -1,0 +1,17 @@
+.sectionWrapperContainer {
+    padding: 5rem;
+    background: #E6F2F2;
+    display: flex;
+    width: 100%;
+  }
+  .title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .sectionWrapperContainer {
+      padding: 1rem;
+      flex-direction: column;
+    }
+  }

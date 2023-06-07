@@ -1,0 +1,81 @@
+.travelGuideContainer {
+  width: 50%;
+  margin-left: 25px;
+}
+
+.travelGuideTitle {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.travelGuideCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  gap: 10px;
+  height: 176px;
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.travelButton {
+  height: 40px;
+  border: 1px solid #008080;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #008080;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 15px;
+  font-family: "Greycliff CF";
+  font-style: normal;
+  font-weight: 700;
+}
+.travelDescriptionContent {
+  margin-bottom: 32px;
+}
+
+.travelGuideName {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.profileImage {
+  width: 128px;
+  height: 128px;
+}
+.subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 790px) {
+  .travelGuideContainer {
+    width: 100%;
+    margin-left: 0;
+  }
+  .profileImage {
+    width: 74px;
+    height: 74px;
+  }
+
+  .travelGuideName {
+    font-size: 18px;
+    line-height: 36px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+  .travelDescriptionContent {
+    margin-bottom: 16px;
+  }
+  .travelGuideCard {
+    padding: 20px;
+  }
+}
