@@ -8,12 +8,14 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useRouter } from "next/router";
 
 interface IHighlightProps {
   hightlights: any;
 }
 
 export const Highlight = ({ hightlights }: IHighlightProps) => {
+  const router = useRouter();
 
   const settings = {
     dots: false,
@@ -48,6 +50,10 @@ export const Highlight = ({ hightlights }: IHighlightProps) => {
         },
       },
     ],
+  };
+
+  const handleClick = (title: string) => {
+    router.push(`/highlight/${title}`);
   };
 
   return (
@@ -85,7 +91,10 @@ export const Highlight = ({ hightlights }: IHighlightProps) => {
                   <CardActions
                     sx={{ justifyContent: "end", paddingRight: "2rem" }}
                   >
-                    <button className={styleHighlight.cardButton}>
+                    <button
+                      className={styleHighlight.cardButton}
+                      onClick={() => handleClick(cval?.title)}
+                    >
                       <ArrowForwardIcon style={{ color: "#008080" }} />
                     </button>
                   </CardActions>

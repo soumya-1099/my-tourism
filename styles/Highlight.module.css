@@ -41,6 +41,7 @@
   border-style: none;
   height: 40px;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
