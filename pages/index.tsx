@@ -20,13 +20,25 @@ export default function Home(props: any) {
 }
 
 export async function getServerSideProps() {
-  const hightlights = await fetchHighlights();
-  const categoriesData = await fetchCategories();
+  try {
+    const hightlights = await fetchHighlights();
+    const categoriesData = await fetchCategories();
 
-  return {
-    props: {
-      hightlights,
-      categoriesData
-    },
-  };
+    return {
+      props: {
+        hightlights,
+        categoriesData,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return {
+      props: {
+        hightlights: [], 
+        categoriesData: [], 
+        error: "Failed to fetch data",
+      },
+    };
+  }
 }
+
